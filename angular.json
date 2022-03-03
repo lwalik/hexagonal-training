@@ -7,8 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss",
-          "styleext": "scss"
+          "style": "scss"
         }
       },
       "root": "",
@@ -115,8 +114,7 @@
   },
   "schematics": {
     "@schematics/angular:component": {
-      "style": "scss",
-      "styleext": "scss"
+      "style": "scss"
     }
   },
   "defaultProject": "todo-training"
