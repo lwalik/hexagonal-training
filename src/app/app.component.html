@@ -1,14 +1,14 @@
-<ul class="nav justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="about">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="pracownik">Employees</a>
-  </li>
-</ul>
+<nav>
+  <input type="checkbox" id="checkbox1" />
+  <label for="checkbox1">
+    <ul class="menu demo">
+      <li><a routerLink="/">HOME</a></li>
+      <li><a routerLink="about">ABOUT</a></li>
+      <li><a routerLink="pracownik">EMPLOYEES</a></li>
+    </ul>
+    <span class="toggle">☰</span>
+  </label>
+</nav>
 
 <div class="container">
   <router-outlet></router-outlet>
