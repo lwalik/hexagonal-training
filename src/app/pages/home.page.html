@@ -1,9 +1,9 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col">
-      <img [src]="image.src" [alt]="image.src" height="200vh" />
+      <img [src]="image.src" [alt]="image.src" class="img-fluid" />
     </div>
-    <div class="col">
+    <div class="col" style="font-size: 1.8vw">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste
         natus laboriosam explicabo modi, nam blanditiis doloribus consequatur
@@ -14,5 +14,22 @@
         dicta quod natus, cupiditate consectetur quam veniam.
       </p>
     </div>
+  </div>
+</div> -->
+
+<div class="grid">
+  <div class="g-col-fixed-100">
+    <img [src]="image.src" [alt]="image.alt" width="100" />
+  </div>
+  <div class="g-col-10">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste
+      natus laboriosam explicabo modi, nam blanditiis doloribus consequatur odit
+      similique ducimus dolor maxime voluptatum! Quam quia blanditiis nemo
+      commodi vitae? Eius necessitatibus doloribus labore? Autem voluptatibus
+      modi voluptatem officia, libero ex et quaerat aut magni harum blanditiis
+      consectetur tempora perspiciatis? Totam alias tempore dicta quod natus,
+      cupiditate consectetur quam veniam.
+    </p>
   </div>
 </div>
