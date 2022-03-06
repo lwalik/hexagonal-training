@@ -13,13 +13,13 @@ import { Observable } from 'rxjs';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class EmployeeDetailsPage implements OnInit {
-  employee: { name: string };
+export class EmployeeDetailsPage {
+  employee = this.route.params;
   constructor(private route: ActivatedRoute) {}
 
-  ngOnInit(): void {
-    this.employee = {
-      name: this.route.snapshot.params['name'],
-    };
-  }
+  // ngOnInit(): void {
+  //   this.employee = {
+  //     name: this.route.snapshot.params['name'],
+  //   };
+  // }
 }

@@ -1,5 +1,4 @@
-<h1>EmployeeDetailsPage</h1>
-
-<div class="container">
-  <p class="text-center fs-2">{{ employee.name }}</p>
+<div class="container d-flex flex-column">
+  <h2 class="text-center">EmployeeDetailsPage</h2>
+  <p class="text-center fs-2">{{ (employee | async )?.name}}</p>
 </div>
