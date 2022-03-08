@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageModule } from './pages/home.page-module';
 import { AboutPageModule } from './pages/about.page-module';
 import { EmployeeDetailsPageModule } from './pages/employee-details.page-module';
+import { EmployeesPageModule } from './pages/employees.page-module';
 
 const routes: Routes = [
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'pracownik',
-    loadChildren: () => EmployeeDetailsPageModule,
+    loadChildren: () => EmployeesPageModule,
   },
   {
     path: 'pracownik/:name',

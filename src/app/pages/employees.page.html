@@ -1,0 +1,53 @@
+<h1>EmployeesPage</h1>
+
+<!-- <div class="container mx-auto d-flex justify-content-around" style="width: 95%">
+  <div class="grid">
+    <div class="g-col-12 g-col-md-6 g-col-lg-4">
+      <div class="card" style="width: 13rem">
+        <img
+          [src]="employees.first.imgSrc"
+          class="card-img-top"
+          [alt]="employees.first.alt"
+        />
+        <div class="card-body">
+          <p class="card-text text-center">{{ employees.first.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="g-col-12 g-col-md-6 g-col-lg-4">
+      <div class="card" style="width: 13rem">
+        <img
+          [src]="employees.second.imgSrc"
+          class="card-img-top"
+          [alt]="employees.second.alt"
+        />
+        <div class="card-body">
+          <p class="card-text text-center">
+            {{ employees.second.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="g-col-12 g-col-md-6 g-col-lg-4">
+      <div class="card" style="width: 13rem">
+        <img
+          [src]="employees.third.imgSrc"
+          class="card-img-top"
+          [alt]="employees.third.alt"
+        />
+        <div class="card-body">
+          <p class="card-text text-center">{{ employees.third.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <ul>
+    <li *ngFor="let employee of employees$ | async">
+      <h3>{{employee.name}}</h3>
+      <p>{{ employee.description }}</p>
+      <!-- <img [src]="employee.imgSrc" [alt]="employee.alt" /> -->
+    </li>
+  </ul>
+</div>
