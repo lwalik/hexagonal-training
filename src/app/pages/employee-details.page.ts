@@ -12,7 +12,4 @@ import { Observable } from 'rxjs';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class EmployeeDetailsPage {
-  employee$ = this._activatedRoute.params;
-  constructor(private _activatedRoute: ActivatedRoute) {}
-}
+export class EmployeeDetailsPage {}

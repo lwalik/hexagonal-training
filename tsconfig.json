@@ -5,6 +5,16 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
+    "paths": {
+      "employees": [
+        "dist/employees/employees",
+        "dist/employees"
+      ],
+      "team": [
+        "dist/team/team",
+        "dist/team"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
