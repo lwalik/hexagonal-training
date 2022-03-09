@@ -1,9 +1,9 @@
-<div class="container">
-  <ul class="list-group">
+<div class="container mx-auto d-flex justify-content-center">
+  <ul class="list-group" style="width: 50%">
     <li
-      class="list-group-item text-center"
+      class="list-group-item text-center bg-info text-white"
       *ngFor="let employee of employees$ | async"
-      [routerLink]="employee.name"
+      routerLink="/pracownik/{{ employee.name }}"
     >
       <h5>{{ employee.name }}</h5>
       <p>{{ employee.description }}</p>

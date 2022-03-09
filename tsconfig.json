@@ -6,14 +6,8 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "paths": {
-      "employees": [
-        "dist/employees/employees",
-        "dist/employees"
-      ],
-      "team": [
-        "dist/team/team",
-        "dist/team"
-      ]
+      "employees": ["dist/employees/employees", "dist/employees"],
+      "team": ["dist/team/team", "dist/team"]
     },
     "declaration": false,
     "downlevelIteration": true,
@@ -22,12 +16,10 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictTemplates": true
   }
 }
