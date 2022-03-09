@@ -1,0 +1,12 @@
+<h3 class="text-center">Hello Contact</h3>
+<form
+  [formGroup]="messageForm"
+  class="d-flex justify-content-center"
+  (ngSubmit)="onFormSubmited(messageForm)"
+>
+  <input type="text" formControlName="email" placeholder="Email" /><input
+    type="text"
+    formControlName="text"
+    placeholder="Text"
+  /><input type="submit" value="Submit" />
+</form>

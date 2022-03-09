@@ -6,7 +6,14 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "paths": {
-      "employees": ["dist/employees/employees", "dist/employees"],
+      "employees": [
+        "dist/employees/employees",
+        "dist/employees"
+      ],
+      "messages": [
+        "dist/messages/messages",
+        "dist/messages"
+      ],
       "team": ["dist/team/team", "dist/team"]
     },
     "declaration": false,
