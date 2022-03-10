@@ -6,15 +6,11 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "paths": {
-      "employees": [
-        "dist/employees/employees",
-        "dist/employees"
-      ],
-      "messages": [
-        "dist/messages/messages",
-        "dist/messages"
-      ],
-      "team": ["dist/team/team", "dist/team"]
+      "employees": ["dist/employees/employees", "dist/employees"],
+      "messages": ["dist/messages/messages", "dist/messages"],
+      "team": ["dist/team/team", "dist/team"],
+      "@team": ["projects/team/src/index.ts"],
+      "@messages": ["projects/messages/src/index.ts"]
     },
     "declaration": false,
     "downlevelIteration": true,

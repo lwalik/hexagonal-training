@@ -2,11 +2,6 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-#checkbox1,
-.toggle {
-  display: none;
-}
-
 .menu {
   height: 30px;
 }
@@ -27,16 +22,7 @@
 
 @include media-breakpoint-down(sm) {
   .toggle {
-    display: block;
-    margin: auto;
-    text-align: center;
-    line-height: 40px;
     cursor: pointer;
-    height: 40px;
-    font-size: 18px;
-    width: 15%;
-    color: #9b2226;
-    border-radius: 5px;
     transition: all 0.1s linear;
   }
   .toggle:hover {

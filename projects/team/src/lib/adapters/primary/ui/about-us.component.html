@@ -9,9 +9,9 @@
       *ngFor="let c of cards$ | async"
     >
       <div class="card" style="width: 13rem">
-        <img [src]="c.imgSrc" class="card-img-top" [alt]="c.alt" />
+        <img [src]="c.imgSrc" class="card-img-top" [alt]="c.id" />
         <div class="card-body">
-          <p class="card-text text-center">{{ c.description }}</p>
+          <p class="card-text text-center">{{ c.bio }}</p>
         </div>
       </div>
     </div>

@@ -3,7 +3,8 @@ import {
   ViewEncapsulation,
   ChangeDetectionStrategy,
 } from '@angular/core';
-import { of } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { OurTeamDTO } from '../../../application/ports/secondary/our-team.dto';
 
 @Component({
   selector: 'lib-our-team',
@@ -12,41 +13,41 @@ import { of } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurTeamComponent {
-  readonly employees$ = of([
+  readonly employees$: Observable<OurTeamDTO[]> = of([
     {
+      id: '1',
       name: 'Jan',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      alt: 'Employee',
-      description: 'Manager',
+      bio: 'Manager',
     },
     {
+      id: '2',
       name: 'Piotr',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      alt: 'Employee',
-      description: 'IT Support',
+      bio: 'IT Support',
     },
     {
+      id: '3',
       name: 'Łukasz',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      alt: 'Employee',
-      description: 'Developer',
+      bio: 'Developer',
     },
     {
+      id: '4',
       name: 'Ksawery',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      alt: 'Employee',
-      description: 'Developer',
+      bio: 'Developer',
     },
     {
+      id: '5',
       name: 'Bartek',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      alt: 'Employee',
-      description: 'HR',
+      bio: 'HR',
     },
   ]);
 }

@@ -3,7 +3,8 @@ import {
   ViewEncapsulation,
   ChangeDetectionStrategy,
 } from '@angular/core';
-import { of } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { AboutUsDTO } from '../../../application/ports/secondary/about-us.dto';
 
 @Component({
   selector: 'lib-about-us',
@@ -12,24 +13,24 @@ import { of } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutUsComponent {
-  readonly cards$ = of([
+  readonly cards$: Observable<AboutUsDTO[]> = of([
     {
+      id: '1',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      alt: 'first Employee',
-      description: 'Manager',
+      bio: 'Manager',
     },
     {
+      id: '2',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      alt: 'second Employee',
-      description: 'IT Support',
+      bio: 'IT Support',
     },
     {
+      id: '3',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      alt: 'third Employee',
-      description: 'Developer',
+      bio: 'Developer',
     },
   ]);
 }
