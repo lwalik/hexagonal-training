@@ -1,12 +1,20 @@
-<div class="container mx-auto d-flex justify-content-center">
-  <ul class="list-group" style="width: 50%">
-    <li
-      class="list-group-item text-center bg-info text-white"
-      *ngFor="let employee of employees$ | async"
-      routerLink="/pracownik/{{ employee.name }}"
-    >
-      <h5>{{ employee.name }}</h5>
-      <p>{{ employee.bio }}</p>
-    </li>
-  </ul>
+<div
+  class="card text-center w-50 mx-auto border-info mb-3"
+  *ngFor="let employee of employees$ | async"
+>
+  <div class="card-body grid align-middle">
+    <div class="g-col-4 g-start-1">
+      <h5 class="card-title">{{ employee.name }}</h5>
+      <p class="card-text">
+        {{ employee.bio }}
+      </p>
+    </div>
+    <div class="g-col-4 g-start-8">
+      <a
+        [routerLink]="'/pracownik/' + employee.name"
+        class="btn btn-primary mt-2"
+        >View</a
+      >
+    </div>
+  </div>
 </div>

@@ -18,19 +18,19 @@ export class AboutUsComponent {
       id: '1',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      bio: 'Manager',
+      text: 'Manager',
     },
     {
       id: '2',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      bio: 'IT Support',
+      text: 'IT Support',
     },
     {
       id: '3',
       imgSrc:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
-      bio: 'Developer',
+      text: 'Developer',
     },
   ]);
 }

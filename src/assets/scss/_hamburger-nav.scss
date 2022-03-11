@@ -37,7 +37,7 @@
   #checkbox1:checked + label .demo {
     height: 200px;
   }
-  .menu {
+  .menu-sm {
     border-radius: 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -46,21 +46,18 @@
     align-items: center;
     height: 0px;
     transition: height 0.3s linear;
+    .nav-link {
+      display: flex;
+      align-self: center;
+      width: 95%;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      align-content: center;
+      text-align: center;
+    }
   }
-  .menu .nav-link {
-    display: flex;
-    align-self: center;
-    width: 90%;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-  }
-  .menu .menu-link {
-    width: 95%;
-    text-align: center;
-    align-self: center;
-    align-content: center;
-  }
+
   .navbar {
     justify-content: center !important;
   }
