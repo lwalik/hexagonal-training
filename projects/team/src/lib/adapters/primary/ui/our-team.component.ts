@@ -15,39 +15,54 @@ import { EmployeeDTO } from '../../../application/ports/secondary/employee.dto';
 export class OurTeamComponent {
   readonly employees$: Observable<EmployeeDTO[]> = of([
     {
-      id: '1',
-      name: 'Jan',
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'Manager',
+      department: {
+        id: '1',
+        name: 'Jan',
+        employeeCount: 1,
+      },
     },
     {
-      id: '2',
-      name: 'Piotr',
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'IT Support',
+      department: {
+        id: '2',
+        name: 'Piotr',
+        employeeCount: 2,
+      },
     },
     {
-      id: '3',
-      name: 'Łukasz',
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'Developer',
+      department: {
+        id: '3',
+        name: 'Łukasz',
+        employeeCount: 3,
+      },
     },
     {
-      id: '4',
-      name: 'Ksawery',
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'Developer',
+      department: {
+        id: '4',
+        name: 'Ksawery',
+        employeeCount: 4,
+      },
     },
     {
-      id: '5',
-      name: 'Bartek',
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'HR',
+      department: {
+        id: '5',
+        name: 'Bartek',
+        employeeCount: 5,
+      },
     },
   ]);
 }

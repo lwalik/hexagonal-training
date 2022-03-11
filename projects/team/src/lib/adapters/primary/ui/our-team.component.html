@@ -4,14 +4,14 @@
 >
   <div class="card-body grid align-middle">
     <div class="g-col-4 g-start-1">
-      <h5 class="card-title">{{ employee.name }}</h5>
+      <h5 class="card-title">{{ employee.department.name }}</h5>
       <p class="card-text">
         {{ employee.bio }}
       </p>
     </div>
     <div class="g-col-4 g-start-8">
       <a
-        [routerLink]="'/pracownik/' + employee.name"
+        [routerLink]="'/pracownik/' + employee.department.name"
         class="btn btn-primary mt-2"
         >View</a
       >
