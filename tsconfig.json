@@ -9,7 +9,13 @@
       "employees": ["dist/employees/employees", "dist/employees"],
       "messages": ["dist/messages/messages", "dist/messages"],
       "team": ["dist/team/team", "dist/team"],
-      "@team": ["projects/team/src/index.ts"],
+      "@team": [
+        "projects/team/src/index.ts"
+      ],
+      "navigation": [
+        "dist/navigation/navigation",
+        "dist/navigation"
+      ],
       "@messages": ["projects/messages/src/index.ts"]
     },
     "declaration": false,
