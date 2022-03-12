@@ -18,6 +18,8 @@ export class OurTeamComponent {
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'Manager',
+      age: '24',
+      country: 'Poland',
       department: {
         id: '1',
         name: 'Jan',
@@ -28,6 +30,8 @@ export class OurTeamComponent {
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'IT Support',
+      age: '25',
+      country: 'Poland',
       department: {
         id: '2',
         name: 'Piotr',
@@ -38,6 +42,8 @@ export class OurTeamComponent {
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'Developer',
+      age: '25',
+      country: 'Poland',
       department: {
         id: '3',
         name: 'Łukasz',
@@ -48,6 +54,8 @@ export class OurTeamComponent {
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'Developer',
+      age: '25',
+      country: 'Poland',
       department: {
         id: '4',
         name: 'Ksawery',
@@ -58,6 +66,8 @@ export class OurTeamComponent {
       imgUrl:
         'https://fj-employer-blog.s3.amazonaws.com/employer-blog/wp-content/uploads/2015/11/5-Ways-to-Analyze-Employee-Performance-1024x508.jpg',
       bio: 'HR',
+      age: '24',
+      country: 'Poland',
       department: {
         id: '5',
         name: 'Bartek',
