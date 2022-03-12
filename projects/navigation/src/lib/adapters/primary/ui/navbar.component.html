@@ -1,39 +1,16 @@
 <nav
-  class="navbar navbar-dark bg-warning rounded-bottom .mt-0 mx-auto mb-3 d-flex justify-content-center"
-  style="width: 90%"
+  class="navbar navbar-dark bg-warning rounded-bottom .mt-0 mx-auto mb-3 d-flex justify-content-center w-75"
 >
   <input type="checkbox" id="checkbox1" class="d-none" />
   <label for="checkbox1">
     <ul
-      class="menu menu-sm demo p-0 m-0 d-flex justify-content-around align-items-center"
-      style="width: 95vw"
+      class="menu menu-sm demo p-0 m-0 d-flex justify-content-around align-items-center vw-75"
     >
-      <li class="nav-link">
+      <li class="nav-link" *ngFor="let link of links$ | async">
         <a
           class="menu-link text-decoration-none fs-6 rounded p-2 text-white"
-          routerLink="/"
-          >HOME</a
-        >
-      </li>
-      <li class="nav-link">
-        <a
-          class="menu-link text-decoration-none fs-6 rounded p-2 text-white"
-          routerLink="about"
-          >ABOUT</a
-        >
-      </li>
-      <li class="nav-link">
-        <a
-          class="menu-link text-decoration-none fs-6 rounded p-2 text-white"
-          routerLink="pracownik"
-          >EMPLOYEES</a
-        >
-      </li>
-      <li class="nav-link">
-        <a
-          class="menu-link text-decoration-none fs-6 rounded p-2 text-white"
-          routerLink="kontakt"
-          >KONTAKT</a
+          [routerLink]="link.link"
+          >{{ link.name }}</a
         >
       </li>
     </ul>
