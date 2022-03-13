@@ -1,0 +1,64 @@
+.navbar {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.menu {
+  height: 30px;
+}
+
+.menu .menu-link {
+  transition: background 0.2s linear;
+}
+
+.menu .menu-link:hover {
+  background: #ca6702;
+}
+
+@include media-breakpoint-down(md) {
+  .menu .menu-link {
+    font-size: 13px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .toggle {
+    cursor: pointer;
+    transition: all 0.1s linear;
+  }
+  .toggle:hover {
+    background: #e9d8a6;
+  }
+  #checkbox1:checked + label .demo .nav-link {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s linear;
+  }
+
+  #checkbox1:checked + label .demo {
+    height: 200px;
+  }
+  .menu-sm {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0px;
+    transition: height 0.3s linear;
+    .nav-link {
+      display: flex;
+      align-self: center;
+      width: 95%;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      align-content: center;
+      text-align: center;
+    }
+  }
+
+  .navbar {
+    justify-content: center !important;
+  }
+}
