@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "todo-training-f902d": {
+      "hosting": {
+        "todo-training": [
+          "todo-training-f902d"
+        ]
+      }
+    }
+  }
+}
