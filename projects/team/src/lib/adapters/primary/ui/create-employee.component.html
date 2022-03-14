@@ -1,30 +1,38 @@
 <h2 class="text-center">Create Employee Component</h2>
 
-<div class="grid">
-  <form [formGroup]="createEmployee" class="g-col-4 g-start-6 w-25">
-    <input type="text" formControlName="bio" placeholder="Bio" />
-    <input type="text" formControlName="age" placeholder="Age" />
-    <input
-      type="text"
-      formControlName="countryId"
-      placeholder="CountryId"
-    /><input
-      type="text"
-      formControlName="countryName"
-      placeholder="Country.Name"
-    /><input
-      type="text"
-      formControlName="departmentId"
-      placeholder="Department.Id"
-    /><input
-      type="text"
-      formControlName="departmentName"
-      placeholder="Department.Name"
-    /><input
-      type="text"
-      formControlName="departmentEmployeeCount"
-      placeholder="Department.Employee Count"
-    />
-    <input type="submit" value="Submit" />
-  </form>
-</div>
+<form [formGroup]="createEmployee" class="grid mx-auto w-50">
+  <input class="g-col-6" type="text" formControlName="bio" placeholder="Bio" />
+  <input
+    class="g-col-6"
+    type="number"
+    formControlName="age"
+    placeholder="Age"
+  />
+  <input
+    class="g-col-6"
+    type="text"
+    formControlName="countryId"
+    placeholder="CountryId"
+  /><input
+    class="g-col-6"
+    type="text"
+    formControlName="countryName"
+    placeholder="Country.Name"
+  /><input
+    class="g-col-6"
+    type="text"
+    formControlName="departmentId"
+    placeholder="Department.Id"
+  /><input
+    class="g-col-6"
+    type="text"
+    formControlName="departmentName"
+    placeholder="Department.Name"
+  /><input
+    class="g-col-6"
+    type="number"
+    formControlName="departmentEmployeeCount"
+    placeholder="Department.Employee Count"
+  />
+  <input class="g-col-6" type="submit" value="Submit" />
+</form>
