@@ -1,0 +1,30 @@
+<h2 class="text-center">Create Employee Component</h2>
+
+<div class="grid">
+  <form [formGroup]="createEmployee" class="g-col-4 g-start-6 w-25">
+    <input type="text" formControlName="bio" placeholder="Bio" />
+    <input type="text" formControlName="age" placeholder="Age" />
+    <input
+      type="text"
+      formControlName="countryId"
+      placeholder="CountryId"
+    /><input
+      type="text"
+      formControlName="countryName"
+      placeholder="Country.Name"
+    /><input
+      type="text"
+      formControlName="departmentId"
+      placeholder="Department.Id"
+    /><input
+      type="text"
+      formControlName="departmentName"
+      placeholder="Department.Name"
+    /><input
+      type="text"
+      formControlName="departmentEmployeeCount"
+      placeholder="Department.Employee Count"
+    />
+    <input type="submit" value="Submit" />
+  </form>
+</div>
