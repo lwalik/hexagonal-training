@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { EmployeesPage } from './employees.page';
-import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
-import { EmployeeDetailsComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/employee-details.component-module';
-import { AboutUsComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/about-us.component-module';
+import { EmployeeComponentModule } from '@team';
+import { EmployeeDetailsComponentModule } from '@team';
+import { AboutUsComponentModule } from '@team';
 import { FirebaseEmployeesServiceModule } from '@team';
 
 @NgModule({
@@ -17,7 +17,7 @@ import { FirebaseEmployeesServiceModule } from '@team';
         component: EmployeesPage,
       },
     ]),
-    OurTeamComponentModule,
+    EmployeeComponentModule,
     EmployeeDetailsComponentModule,
     AboutUsComponentModule,
   ],

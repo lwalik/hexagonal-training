@@ -12,12 +12,12 @@ import {
 } from '../../../application/ports/secondary/gets-all-employee.dto-port';
 
 @Component({
-  selector: 'lib-our-team',
-  templateUrl: './our-team.component.html',
+  selector: 'lib-employee',
+  templateUrl: './employee.component.html',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class OurTeamComponent {
+export class EmployeeComponent {
   employees$: Observable<EmployeeDTO[]> = this._getsAllEmployeeDto.getAll();
 
   constructor(
