@@ -14,6 +14,12 @@ export class FirebaseEmployeesService implements GetsAllEmployeeDtoPort {
     return this._client
       .collection<EmployeeDTO>('employees')
       .valueChanges({ idField: 'id' })
-      .pipe(map((data: EmployeeDTO[]) => filterByCriterion(data, criterion)));
+      .pipe(
+        map((data: EmployeeDTO[]) =>
+          filterByCriterion(data, criterion).sort(
+            (a, b) => b.department.id - a.department.id
+          )
+        )
+      );
   }
 }
