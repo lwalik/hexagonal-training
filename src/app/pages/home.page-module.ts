@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
 import { AboutUsComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/about-us.component-module';
+import { FirebaseEmployeesServiceModule } from '@team';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { AboutUsComponentModule } from '../../../projects/team/src/lib/adapters/
       },
     ]),
     OurTeamComponentModule,
-    AboutUsComponentModule
+    AboutUsComponentModule,
+    FirebaseEmployeesServiceModule,
   ],
   declarations: [HomePage],
   providers: [],

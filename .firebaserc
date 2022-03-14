@@ -6,6 +6,13 @@
           "todo-training-f902d"
         ]
       }
+    },
+    "todo-training-42f88": {
+      "hosting": {
+        "todo-training": [
+          "todo-training-42f88"
+        ]
+      }
     }
   }
 }
