@@ -12,14 +12,10 @@ export class FirebaseEmployeesService implements GetsAllEmployeeDtoPort {
 
   getAll(criterion: Partial<EmployeeDTO>): Observable<EmployeeDTO[]> {
     return this._client
-      .collection<EmployeeDTO>('employees')
+      .collection<EmployeeDTO>('employees', (ref) =>
+        ref.orderBy('department.id')
+      )
       .valueChanges({ idField: 'id' })
-      .pipe(
-        map((data: EmployeeDTO[]) =>
-          filterByCriterion(data, criterion).sort(
-            (a, b) => b.department.id - a.department.id
-          )
-        )
-      );
+      .pipe(map((data: EmployeeDTO[]) => filterByCriterion(data, criterion)));
   }
 }
