@@ -30,5 +30,9 @@ export class NavbarComponent {
       name: 'KONTAKT',
       link: 'kontakt',
     },
+    {
+      name: 'ADMIN',
+      link: 'admin',
+    },
   ]);
 }
