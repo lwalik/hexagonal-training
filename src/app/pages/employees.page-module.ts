@@ -9,14 +9,14 @@ import { FirebaseEmployeesServiceModule } from '@team';
 
 @NgModule({
   imports: [
-    CommonModule,
-    FirebaseEmployeesServiceModule,
     RouterModule.forChild([
       {
         path: '',
         component: EmployeesPage,
       },
     ]),
+    CommonModule,
+    FirebaseEmployeesServiceModule,
     EmployeesComponentModule,
     EmployeeDetailsComponentModule,
     AboutUsComponentModule,
