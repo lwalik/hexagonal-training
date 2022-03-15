@@ -1,12 +1,5 @@
 {
   "targets": {
-    "todo-training-f902d": {
-      "hosting": {
-        "todo-training": [
-          "todo-training-f902d"
-        ]
-      }
-    },
     "todo-training-42f88": {
       "hosting": {
         "todo-training": [

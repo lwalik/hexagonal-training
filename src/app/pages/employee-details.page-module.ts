@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { EmployeeDetailsPage } from './employee-details.page';
-import { EmployeeComponentModule } from '@team';
+import { EmployeesComponentModule } from '@team';
 import { EmployeeDetailsComponentModule } from '@team';
 
 @NgModule({
@@ -14,7 +14,7 @@ import { EmployeeDetailsComponentModule } from '@team';
         component: EmployeeDetailsPage,
       },
     ]),
-    EmployeeComponentModule,
+    EmployeesComponentModule,
     EmployeeDetailsComponentModule,
   ],
   declarations: [EmployeeDetailsPage],

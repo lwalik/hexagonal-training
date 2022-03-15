@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
-import { EmployeeComponentModule } from '@team';
+import { EmployeesComponentModule } from '@team';
 import { AboutUsComponentModule } from '@team';
 import { FirebaseEmployeesServiceModule } from '@team';
 
@@ -15,7 +15,7 @@ import { FirebaseEmployeesServiceModule } from '@team';
         component: HomePage,
       },
     ]),
-    EmployeeComponentModule,
+    EmployeesComponentModule,
     AboutUsComponentModule,
     FirebaseEmployeesServiceModule,
   ],

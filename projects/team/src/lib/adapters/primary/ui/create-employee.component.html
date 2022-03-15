@@ -1,38 +1,47 @@
 <h2 class="text-center">Create Employee Component</h2>
 
-<form [formGroup]="createEmployee" class="grid mx-auto w-50">
-  <input class="g-col-6" type="text" formControlName="bio" placeholder="Bio" />
-  <input
-    class="g-col-6"
-    type="number"
-    formControlName="age"
-    placeholder="Age"
-  />
-  <input
-    class="g-col-6"
-    type="text"
-    formControlName="countryId"
-    placeholder="CountryId"
-  /><input
-    class="g-col-6"
-    type="text"
-    formControlName="countryName"
-    placeholder="Country.Name"
-  /><input
-    class="g-col-6"
-    type="text"
-    formControlName="departmentId"
-    placeholder="Department.Id"
-  /><input
-    class="g-col-6"
-    type="text"
-    formControlName="departmentName"
-    placeholder="Department.Name"
-  /><input
-    class="g-col-6"
-    type="number"
-    formControlName="departmentEmployeeCount"
-    placeholder="Department.Employee Count"
-  />
-  <input class="g-col-6" type="submit" value="Submit" />
-</form>
+<div class="grid">
+  <div class="g-col-4 g-start-6 w-25">
+    <form [formGroup]="createEmployee">
+      <input
+        class="g-col-6"
+        type="text"
+        formControlName="bio"
+        placeholder="Bio"
+      />
+      <input
+        class="g-col-6"
+        type="number"
+        formControlName="age"
+        placeholder="Age"
+      />
+      <input
+        class="g-col-6"
+        type="text"
+        formControlName="countryId"
+        placeholder="CountryId"
+      /><input
+        class="g-col-6"
+        type="text"
+        formControlName="countryName"
+        placeholder="Country.Name"
+      /><input
+        class="g-col-6"
+        type="text"
+        formControlName="departmentId"
+        placeholder="Department.Id"
+      /><input
+        class="g-col-6"
+        type="text"
+        formControlName="departmentName"
+        placeholder="Department.Name"
+      /><input
+        class="g-col-6"
+        type="number"
+        formControlName="departmentEmployeeCount"
+        placeholder="Department.Employee Count"
+      />
+      <input class="g-col-6" type="submit" value="Submit" />
+    </form>
+  </div>
+</div>

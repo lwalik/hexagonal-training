@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { EmployeeComponent } from './employee.component';
+import { EmployeesComponent } from './employees.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
-  declarations: [EmployeeComponent],
+  declarations: [EmployeesComponent],
   providers: [],
-  exports: [EmployeeComponent],
+  exports: [EmployeesComponent],
 })
-export class EmployeeComponentModule {}
+export class EmployeesComponentModule {}
