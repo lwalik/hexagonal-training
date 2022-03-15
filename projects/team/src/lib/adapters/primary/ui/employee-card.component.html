@@ -33,6 +33,16 @@
             <p>Age: {{ employee.age }}</p>
             <p>Country: {{ employee.country.name }}</p>
           </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              [routerLink]="employee.id"
+            >
+              More
+            </button>
+          </div>
         </div>
       </div>
     </div>
