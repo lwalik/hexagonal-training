@@ -4,6 +4,8 @@ import {
   ChangeDetectionStrategy,
   Input,
 } from '@angular/core';
+import { Observable } from 'rxjs';
+import { EmployeeDTO } from '../../../application/ports/secondary/employee.dto';
 
 @Component({
   selector: 'lib-employee-card',
@@ -12,5 +14,5 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeCardComponent {
-  @Input() employee: any;
+  @Input() employee: EmployeeDTO;
 }
