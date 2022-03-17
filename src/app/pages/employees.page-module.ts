@@ -6,6 +6,7 @@ import { EmployeesComponentModule } from '@team';
 import { EmployeeDetailsComponentModule } from '@team';
 import { AboutUsComponentModule } from '@team';
 import { FirebaseEmployeesServiceModule } from '@team';
+import { EmployeeDetailsPageModule } from './employee-details.page-module';
 
 @NgModule({
   imports: [
@@ -13,6 +14,10 @@ import { FirebaseEmployeesServiceModule } from '@team';
       {
         path: '',
         component: EmployeesPage,
+      },
+      {
+        path: ':employeeId',
+        loadChildren: () => EmployeeDetailsPageModule,
       },
     ]),
     CommonModule,

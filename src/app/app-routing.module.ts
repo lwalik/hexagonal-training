@@ -21,10 +21,6 @@ const routes: Routes = [
     loadChildren: () => EmployeesPageModule,
   },
   {
-    path: 'pracownik/:employeeId',
-    loadChildren: () => EmployeeDetailsPageModule,
-  },
-  {
     path: 'kontakt',
     loadChildren: () => ContactUsPageModule,
   },
