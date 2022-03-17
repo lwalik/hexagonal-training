@@ -8,18 +8,12 @@ import {
   FirebaseEmployeesServiceModule,
 } from '@team';
 
-import { EmployeeDetailsPage } from './employee-details.page';
-
 @NgModule({
   imports: [
     RouterModule.forChild([
       {
         path: '',
         component: EmployeesPage,
-      },
-      {
-        path: ':employeeId',
-        component: EmployeeDetailsPage,
       },
     ]),
     CommonModule,
