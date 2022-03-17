@@ -20,6 +20,7 @@ export class CreateEmployeeComponent {
   readonly createEmployee: FormGroup = new FormGroup({
     bio: new FormControl(),
     age: new FormControl(),
+    imageURL: new FormControl(),
     countryId: new FormControl(),
     countryName: new FormControl(),
     departmentId: new FormControl(),
@@ -38,6 +39,7 @@ export class CreateEmployeeComponent {
     this._addsEmployeeDto.add({
       bio: createEmployee.get('bio').value,
       age: createEmployee.get('age').value,
+      imageURL: createEmployee.get('imageURL').value,
       country: {
         id: createEmployee.get('countryId').value,
         name: createEmployee.get('countryId').value,
