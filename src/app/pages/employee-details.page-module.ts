@@ -7,7 +7,6 @@ import {
   FirebaseEmployeesServiceModule,
 } from '@team';
 import { EmployeeDetailsComponentModule } from '@team';
-import { AngularFireModule } from '@angular/fire';
 
 @NgModule({
   imports: [
@@ -21,7 +20,6 @@ import { AngularFireModule } from '@angular/fire';
     EmployeesComponentModule,
     EmployeeDetailsComponentModule,
     FirebaseEmployeesServiceModule,
-    AngularFireModule,
   ],
   declarations: [EmployeeDetailsPage],
   providers: [],
