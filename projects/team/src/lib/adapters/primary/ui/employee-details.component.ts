@@ -1,4 +1,3 @@
-import { ActivatedRoute } from '@angular/router';
 import {
   Component,
   ViewEncapsulation,
@@ -11,6 +10,12 @@ import {
   GETS_ONE_EMPLOYEE_DTO,
   GetsOneEmployeeDtoPort,
 } from '../../../application/ports/secondary/gets-one-employee.dto-port';
+import { switchMap } from 'rxjs/operators';
+import {
+  CONTEXT_DTO_STORAGE,
+  ContextDtoStoragePort,
+} from '../../../application/ports/secondary/context-dto.storage-port';
+import { ContextDTO } from '../../../application/ports/secondary/context.dto';
 
 @Component({
   selector: 'lib-employee-details',
@@ -19,14 +24,18 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeDetailsComponent {
-  param = this._activatedRoute.snapshot.params.employeeId;
-  employee$: Observable<EmployeeDTO> = this._getsOneEmployeeDto.getOne(
-    this.param
-  );
+  employee$: Observable<EmployeeDTO> = this._contextDtoStoragePort
+    .asObservable()
+    .pipe(
+      switchMap((data: ContextDTO) =>
+        this._getsOneEmployeeDto.getOne(data.employeeId)
+      )
+    );
 
   constructor(
     @Inject(GETS_ONE_EMPLOYEE_DTO)
     private _getsOneEmployeeDto: GetsOneEmployeeDtoPort,
-    private _activatedRoute: ActivatedRoute
+    @Inject(CONTEXT_DTO_STORAGE)
+    private _contextDtoStoragePort: ContextDtoStoragePort
   ) {}
 }
