@@ -7,5 +7,5 @@ export const GETS_ONE_EMPLOYEE_DTO = new InjectionToken<GetsOneEmployeeDtoPort>(
 );
 
 export interface GetsOneEmployeeDtoPort {
-  getOne(id: string): Observable<EmployeeDTO | undefined>;
+  getOne(id: string): Observable<EmployeeDTO>;
 }
