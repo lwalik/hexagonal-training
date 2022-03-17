@@ -1,3 +1,52 @@
 <div *ngFor="let employee of employees$ | async">
-  <lib-employee-card [employee]="employee"></lib-employee-card>
+  <div class="card text-center w-50 mx-auto border-info mb-3">
+    <div class="card-body grid justify-content-center">
+      <div class="g-col-12 g-col-md-6">
+        <h5 class="card-title">{{ employee.department.name }}</h5>
+        <p class="card-text">
+          {{ employee.bio }}
+        </p>
+      </div>
+      <div class="g-col-12 g-col-md-6">
+        <a
+          class="btn btn-primary mt-2"
+          data-bs-toggle="modal"
+          [attr.data-bs-target]="'#exampleModal' + employee.department.id"
+          >View</a
+        >
+      </div>
+      <div class="modal fade" [id]="'exampleModal' + employee.department.id">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center">
+                {{ employee.department.name }}
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>{{ employee.bio }}</p>
+              <p>Age: {{ employee.age }}</p>
+              <p>Country: {{ employee.country.name }}</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+                [routerLink]="'/pracownik/' + employee.id"
+              >
+                More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
