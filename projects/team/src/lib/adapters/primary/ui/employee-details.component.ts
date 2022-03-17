@@ -19,7 +19,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeDetailsComponent {
-  param = this._activatedRoute.snapshot.params['employeeId'];
+  param = this._activatedRoute.snapshot.params.employeeId;
   employee$: Observable<EmployeeDTO> = this._getsOneEmployeeDto.getOne(
     this.param
   );
