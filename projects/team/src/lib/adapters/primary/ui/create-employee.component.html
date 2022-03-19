@@ -1,36 +1,62 @@
-<h2 class="text-center">Create Employee Component</h2>
-
-<div class="grid">
-  <div class="g-col-4 g-start-6 w-25">
-    <form
-      [formGroup]="createEmployee"
-      (ngSubmit)="onCreateEmployeeSubmited(createEmployee)"
-    >
-      <input type="text" formControlName="bio" placeholder="Bio" />
-      <input type="number" formControlName="age" placeholder="Age" />
-      <input
-        type="text"
-        formControlName="countryId"
-        placeholder="CountryId"
-      /><input
-        type="text"
-        formControlName="countryName"
-        placeholder="Country.Name"
-      /><input
-        type="text"
-        formControlName="departmentId"
-        placeholder="Department.Id"
-      /><input
-        type="text"
-        formControlName="departmentName"
-        placeholder="Department.Name"
-      /><input
-        type="number"
-        formControlName="departmentEmployeeCount"
-        placeholder="Department.Employee Count"
-      />
-      <input type="text" formControlName="imageURL" placeholder="imageURL" />
-      <input type="submit" value="Submit" />
-    </form>
-  </div>
+<div class="container w-50 mx-auto">
+  <form
+    [formGroup]="createEmployee"
+    (ngSubmit)="onCreateEmployeeSubmited(createEmployee)"
+  >
+    <input
+      class="form-control m-1"
+      type="text"
+      formControlName="bio"
+      placeholder="Bio"
+    />
+    <input
+      class="form-control m-1"
+      type="number"
+      formControlName="age"
+      placeholder="Age"
+    />
+    <input
+      class="form-control m-1"
+      type="text"
+      formControlName="tel"
+      placeholder="Tel"
+    />
+    <input
+      class="form-control m-1"
+      type="text"
+      formControlName="email"
+      placeholder="Email"
+    />
+    <input
+      class="form-control m-1"
+      type="text"
+      formControlName="countryId"
+      placeholder="Country Id"
+    />
+    <input
+      class="form-control m-1"
+      type="text"
+      formControlName="countryName"
+      placeholder="Country Name"
+    />
+    <input
+      class="form-control m-1"
+      type="text"
+      formControlName="departmentId"
+      placeholder="Id"
+    />
+    <input
+      class="form-control m-1"
+      type="text"
+      formControlName="departmentName"
+      placeholder="Name"
+    />
+    <input
+      class="form-control m-1"
+      type="number"
+      formControlName="departmentEmployeeCount"
+      placeholder="Employee Count"
+    />
+    <input class="form-control btn-primary m-1" type="submit" value="Submit" />
+  </form>
 </div>
