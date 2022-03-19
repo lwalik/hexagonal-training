@@ -6,9 +6,11 @@ import {
   EmployeesComponentModule,
   EmployeeDetailsComponentModule,
   FirebaseEmployeesServiceModule,
+  EmployeeIdResolverModule,
 } from '@team';
 import { EmployeeDetailsPage } from './employee-details.page';
 import { EmployeeDetailsPageModule } from './employee-details.page-module';
+import { EmployeeIdResolver } from 'projects/team/src/lib/adapters/primary/ui/employee-id.resolver';
 
 @NgModule({
   imports: [
@@ -17,11 +19,19 @@ import { EmployeeDetailsPageModule } from './employee-details.page-module';
         path: '',
         component: EmployeesPage,
       },
+      {
+        path: ':employeeId',
+        component: EmployeeDetailsPage,
+        resolve: {
+          employeeId: EmployeeIdResolver,
+        },
+      },
     ]),
     CommonModule,
     FirebaseEmployeesServiceModule,
     EmployeesComponentModule,
     EmployeeDetailsComponentModule,
+    EmployeeIdResolverModule,
   ],
   declarations: [EmployeesPage],
   providers: [],

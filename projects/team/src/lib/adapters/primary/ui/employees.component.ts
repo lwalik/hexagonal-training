@@ -26,12 +26,6 @@ export class EmployeesComponent {
 
   constructor(
     @Inject(GETS_ALL_EMPLOYEE_DTO)
-    private _getsAllEmployeeDto: GetsAllEmployeeDtoPort,
-    @Inject(CONTEXT_DTO_STORAGE)
-    private _contextDtoStorage: ContextDtoStoragePort
+    private _getsAllEmployeeDto: GetsAllEmployeeDtoPort
   ) {}
-
-  onEmployeeClicked(employee: EmployeeDTO): void {
-    this._contextDtoStorage.next({ employeeId: employee.id });
-  }
 }

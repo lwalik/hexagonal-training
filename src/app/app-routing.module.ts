@@ -28,10 +28,6 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: () => AdminPageModule,
   },
-  {
-    path: 'pracownik/:employeeId',
-    loadChildren: () => EmployeeDetailsPageModule,
-  },
 ];
 
 @NgModule({

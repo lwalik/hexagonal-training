@@ -10,16 +10,16 @@ import {
 
 @NgModule({
   imports: [
-    CommonModule,
-    EmployeeDetailsComponentModule,
-    EmployeeIdResolverModule,
-    FirebaseEmployeesServiceModule,
     RouterModule.forChild([
       {
         path: '',
         component: EmployeeDetailsPage,
       },
     ]),
+    CommonModule,
+    EmployeeDetailsComponentModule,
+    EmployeeIdResolverModule,
+    FirebaseEmployeesServiceModule,
   ],
   declarations: [EmployeeDetailsPage],
   providers: [],

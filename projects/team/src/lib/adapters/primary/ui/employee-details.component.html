@@ -1,20 +1,20 @@
-<!-- <div class="card w-75 mx-5" *ngIf="employee$ | async as employee">
-  <img [src]="employee.imageURL" class="card-img-top img-fluid" alt="..." />
-  <div class="card-body">
-    <h5 class="card-title">{{ employee.department.name }}</h5>
-    <p class="card-text">
-      {{ employee.age }}
-    </p>
+<div class="container mx-auto w-25 h-50">
+  <div class="card w-75 mx-5" *ngIf="employee$ | async as employee">
+    <img [src]="employee.imageURL" class="card-img-top img-fluid" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ employee.department.name }}</h5>
+      <p class="card-text">
+        {{ employee.age }}
+      </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{ employee.country.name }}</li>
+      <li class="list-group-item">{{ employee.bio }}</li>
+    </ul>
+    <div class="card-body">
+      <p class="fs-6">Email: test@test.com</p>
+      <p class="p-0 fs-6">Tel: 000 000 000</p>
+      <p class="p-0 fs-6">Github: https://github.com/</p>
+    </div>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">{{ employee.country.name }}</li>
-    <li class="list-group-item">{{ employee.bio }}</li>
-  </ul>
-  <div class="card-body">
-    <p class="fs-6">Email: test@test.com</p>
-    <p class="p-0 fs-6">Tel: 000 000 000</p>
-    <p class="p-0 fs-6">Github: https://github.com/</p>
-  </div>
-</div> -->
-
-<p>{{ employee$ | async | json }}</p>
+</div>
