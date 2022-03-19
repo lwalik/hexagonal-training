@@ -24,7 +24,7 @@ export class NavbarComponent {
     },
     {
       name: 'EMPLOYEES',
-      link: 'pracownik',
+      link: 'employee',
     },
     {
       name: 'KONTAKT',
