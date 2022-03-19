@@ -8,9 +8,7 @@
         </p>
       </div>
       <div class="g-col-12 g-col-md-6">
-        <a class="btn btn-primary mt-2" (click)="onEmployeeClicked(employee)"
-          >View</a
-        >
+        <a class="btn btn-primary mt-2" [routerLink]="employee.id">View</a>
       </div>
     </div>
   </div>

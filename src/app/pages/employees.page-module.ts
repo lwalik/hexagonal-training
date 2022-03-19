@@ -7,6 +7,8 @@ import {
   EmployeeDetailsComponentModule,
   FirebaseEmployeesServiceModule,
 } from '@team';
+import { EmployeeDetailsPage } from './employee-details.page';
+import { EmployeeDetailsPageModule } from './employee-details.page-module';
 
 @NgModule({
   imports: [

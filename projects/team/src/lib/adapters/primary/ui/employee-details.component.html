@@ -1,4 +1,4 @@
-<div class="card w-75 mx-5" *ngIf="employee$ | async as employee">
+<!-- <div class="card w-75 mx-5" *ngIf="employee$ | async as employee">
   <img [src]="employee.imageURL" class="card-img-top img-fluid" alt="..." />
   <div class="card-body">
     <h5 class="card-title">{{ employee.department.name }}</h5>
@@ -15,4 +15,6 @@
     <p class="p-0 fs-6">Tel: 000 000 000</p>
     <p class="p-0 fs-6">Github: https://github.com/</p>
   </div>
-</div>
+</div> -->
+
+<p>{{ employee$ | async | json }}</p>
