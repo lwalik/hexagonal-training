@@ -9,7 +9,6 @@ import {
   EmployeeIdResolverModule,
 } from '@team';
 import { EmployeeDetailsPage } from './employee-details.page';
-import { EmployeeDetailsPageModule } from './employee-details.page-module';
 import { EmployeeIdResolver } from 'projects/team/src/lib/adapters/primary/ui/employee-id.resolver';
 
 @NgModule({
@@ -18,6 +17,9 @@ import { EmployeeIdResolver } from 'projects/team/src/lib/adapters/primary/ui/em
       {
         path: '',
         component: EmployeesPage,
+        resolve: {
+          employeeId: EmployeeIdResolver,
+        },
       },
       {
         path: ':employeeId',
